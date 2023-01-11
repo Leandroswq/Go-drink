@@ -7,7 +7,7 @@ Aplicação Full Stack para uma distribuidora de bebidas, onde é possível:
 - Efetuar compras de bebidas.
 - Alterar o status da entrega do produto.
 
-# Link da Aplicação
+## Link da Aplicação
 
 http://godrink.severidade.com.br/login
 
