@@ -169,4 +169,53 @@
     width: 100%;
     z-index: -1;
   }
+
+  .rm_item {
+    background-color: transparent;
+    border: 0 solid transparent;
+    border-radius: 0;
+    bottom: 0;
+    cursor: pointer;
+    height: 40px;
+    overflow: inherit;
+    position: absolute;
+    right: 0;
+    text-indent: -100000%;
+    top: inherit;
+    transform: rotate(0deg);
+    width: 40px;
+    z-index: 2;
+  }
+
+
+  .rm_item:before {
+    background-color: black;
+    border: 4px solid black;
+    border-radius: 20px 0 10px;
+    bottom: 0;
+    content: '';
+    height: 40px;
+    position: absolute;
+    right: 0;
+    width: 40px;
+  }
+
+  .rm_item:after {
+    background-image: url('./img/add_icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: 4px solid transparent;
+    border-radius: 100%;
+    bottom: 0;
+    content: '';
+    cursor: pointer;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: -1000%;
+    transform: rotate(45deg);
+    width: 40px;
+  }
 }

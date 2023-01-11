@@ -93,7 +93,6 @@
   background-size: 90%;
 }
 
-
 .status.EmTrânsito:after {
   background-image: url('./img/icone_transito.svg');
   background-size: 90%;
@@ -188,4 +187,88 @@
 .button_preparing_check:disabled, .button_dispatch_check:disabled {
   color: #a7a0a0;
   cursor: not-allowed;
+}
+
+@media only screen and ( max-width : 425px ) {
+
+  .order_details {
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px 1fr;
+    height: inherit;
+    justify-content: space-between;
+    padding: 10px 0 10px 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  .order_number {
+
+    /* background-color: #d6ff06; */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    /* display: none; */
+  }
+
+  .seller_name {
+
+    /* background-color: violet; */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    /* display: none; */
+  }
+
+  .order_data {
+
+    /* background: blue; */
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .status {
+    align-items: flex-end;
+    align-self: end;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100px;
+  }
+
+  .status.Pendente:after {
+    background: url('./img/icone_pendente.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+
+  .status.Preparando:after {
+    background-image: url('./img/icone_preparando.svg');
+    background-position: right center;
+    background-size: 90%;
+  }
+
+  .status.EmTrânsito:after {
+    background-image: url('./img/icone_transito.svg');
+    background-position: 15px center;
+    background-size: 90%;
+  }
+
+  .status.Entregue:after {
+    background-image: url('./img/icone_entregue.svg');
+    background-position: 15px center;
+    background-size: 100%;
+  }
+
+  .status.Pendente:before, .status.Preparando:before, .status.EmTrânsito:before, .status.Entregue:before {
+    content: '';
+    display: none;
+  }
 }

@@ -138,9 +138,10 @@ input {
   .container_products {
 
     /* background-color: rgb(199, 235, 19); */
-    grid-template-columns: 1fr;
-    max-width: 402px;
+    grid-template-columns: 50% 50%;
+    max-width: initial;
     padding-bottom: 250px;
+    width: calc(100vw - 20px);
   }
 
   .container_orders_all {
@@ -150,7 +151,11 @@ input {
     grid-template-columns: 1fr;
   }
 
-  .container_sales, .container_orders {
+  .container_sales {
+    padding: 60px 20px 0 10px;
+  }
+
+  .container_orders {
     padding: 60px 10px 0;
   }
 }

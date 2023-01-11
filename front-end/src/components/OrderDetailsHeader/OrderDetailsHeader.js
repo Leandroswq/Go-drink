@@ -49,6 +49,7 @@ function OrderDetailsHeader({
       }
       <p
         data-testid={ `${testidPrefix}element-order-details-label-order-date` }
+        className={ styles.order_data }
       >
         {new Date(date)
           .toLocaleDateString('pt-BR', {
